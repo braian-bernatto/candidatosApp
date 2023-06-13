@@ -10,7 +10,9 @@ Original file is located at
 import csv
 import pandas as pd
 
-df = pd.read_csv('VW_PLURINOMINALES-30-04-2023.csv')
+#df = pd.read_csv('VW_PLURINOMINALES-30-04-2023.csv')
+url='https://firebasestorage.googleapis.com/v0/b/candidatos-7bc74.appspot.com/o/VW_PLURINOMINALES-30-04-2023.csv?alt=media&token=75842765-3837-43f1-9f21-9c59e5b625e8&_gl=1*1wdej90*_ga*MTE1NDQ3MTgxMC4xNjg2NjEzNjEy*_ga_CW55HF8NVT*MTY4NjYxMzYxMi4xLjEuMTY4NjYxNDIzOS4wLjAuMA..'
+df = pd.read_csv(url)
 
 # Mapeo de códigos de departamento a nombres
 departamento_mapping = {
